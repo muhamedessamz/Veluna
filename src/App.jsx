@@ -15,6 +15,7 @@ const About = lazy(() => import('./pages/About'))
 const Account = lazy(() => import('./pages/Account'))
 const Wishlist = lazy(() => import('./pages/Wishlist'))
 const Journal = lazy(() => import('./pages/Journal'))
+const JournalDetail = lazy(() => import('./pages/JournalDetail'))
 const Checkout = lazy(() => import('./pages/Checkout'))
 const Contact = lazy(() => import('./pages/Contact'))
 const Shipping = lazy(() => import('./pages/Shipping'))
@@ -48,6 +49,7 @@ function App() {
               <Route path="/account" element={<Account />} />
               <Route path="/wishlist" element={<Wishlist />} />
               <Route path="/journal" element={<Journal />} />
+              <Route path="/journal/:id" element={<JournalDetail />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/shipping" element={<Shipping />} />

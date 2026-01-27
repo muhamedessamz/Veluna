@@ -26,7 +26,7 @@ const Navbar = () => {
         { name: 'Journal', path: '/journal' },
     ]
 
-    const isDarkPage = ['/about', '/contact', '/shipping'].includes(location.pathname)
+    const isDarkPage = ['/about', '/contact', '/shipping'].includes(location.pathname) || location.pathname.startsWith('/journal/')
     const navTextColor = scrolled ? 'text-secondary' : (isDarkPage ? 'text-primary' : 'text-secondary')
 
     return (
@@ -49,7 +49,7 @@ const Navbar = () => {
                         <Link
                             key={link.name}
                             to={link.path}
-                            className={`font-luxury text-xs tracking-widest uppercase ${navTextColor} hover:text-accent transition-colors`}
+                            className={`font-luxury text-xs tracking-widest uppercase ${navTextColor} hover:text-accent transition-colors ${!scrolled && isDarkPage ? 'drop-shadow-sm' : ''}`}
                         >
                             {link.name}
                         </Link>
@@ -64,15 +64,15 @@ const Navbar = () => {
                     <img
                         src="/logo.png"
                         alt="Veluna Icon"
-                        className={`h-10 w-auto transition-all duration-500 ${!scrolled && isDarkPage ? 'drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]' : ''}`}
+                        className={`h-10 w-auto transition-all duration-500 ${!scrolled && isDarkPage ? 'filter drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]' : ''}`}
                     />
-                    <span className={`font-serif text-3xl tracking-tighter ${navTextColor} group-hover:text-accent transition-colors`}>
+                    <span className={`font-serif text-3xl tracking-tighter ${navTextColor} group-hover:text-accent transition-colors ${!scrolled && isDarkPage ? 'drop-shadow-sm' : ''}`}>
                         Veluna
                     </span>
                 </Link>
 
                 {/* Icons */}
-                <div className={`flex items-center space-x-6 ${navTextColor}`}>
+                <div className={`flex items-center space-x-6 ${navTextColor} ${!scrolled && isDarkPage ? 'drop-shadow-sm' : ''}`}>
                     <button className="hover:text-accent transition-colors hidden sm:block">
                         <Search size={20} strokeWidth={1.5} />
                     </button>

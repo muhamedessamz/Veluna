@@ -1,34 +1,8 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { articles } from '../data/journalData'
 
 const Journal = () => {
-    const articles = [
-        {
-            id: 1,
-            title: "The Moon & Your Skin Cycle",
-            excerpt: "How lunar phases influence cellular regeneration and hydration levels.",
-            date: "October 12, 2023",
-            image: "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&q=80&w=800",
-            category: "Science"
-        },
-        {
-            id: 2,
-            title: "Ingredient Spotlight: Blue Tansy",
-            excerpt: "The calming power of this rare botanical for sensitive and reactive skin types.",
-            date: "September 28, 2023",
-            image: "https://images.unsplash.com/photo-1608248597279-f99d160bfbc8?auto=format&fit=crop&q=80&w=800",
-            category: "Ingredients"
-        },
-        {
-            id: 3,
-            title: "Rituals for Restful Sleep",
-            excerpt: "Creating a nighttime routine that enhances skin repair while you dream.",
-            date: "September 15, 2023",
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=800",
-            category: "Lifestyle"
-        }
-    ]
-
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -44,7 +18,7 @@ const Journal = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     {articles.map((article) => (
-                        <div key={article.id} className="group cursor-pointer">
+                        <Link to={`/journal/${article.id}`} key={article.id} className="group cursor-pointer">
                             <div className="aspect-[4/5] overflow-hidden mb-6 bg-secondary/5">
                                 <img
                                     src={article.image}
@@ -58,7 +32,7 @@ const Journal = () => {
                                 <p className="text-sm font-light leading-relaxed opacity-60 max-w-xs">{article.excerpt}</p>
                                 <button className="mt-6 text-[10px] tracking-[0.2em] uppercase border-b border-transparent group-hover:border-accent group-hover:text-accent transition-all">Read More</button>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

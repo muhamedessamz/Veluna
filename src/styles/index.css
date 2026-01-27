@@ -85,3 +85,29 @@
 .custom-cursor {
   @apply fixed top-0 left-0 w-8 h-8 rounded-full border border-secondary pointer-events-none z-[9999] mix-blend-difference transition-transform duration-100 ease-out;
 }
+
+/* Journal Content Styles */
+.prose-veluna h3 {
+  @apply text-2xl font-serif mt-12 mb-6;
+}
+
+.prose-veluna p {
+  @apply text-lg font-light leading-relaxed text-secondary/70 mb-8;
+}
+
+.prose-veluna ul,
+.prose-veluna ol {
+  @apply mb-8 ml-6;
+}
+
+.prose-veluna li {
+  @apply text-lg font-light leading-relaxed text-secondary/70 mb-4 list-disc;
+}
+
+.prose-veluna strong {
+  @apply font-normal text-secondary;
+}
+
+.prose-veluna i {
+  @apply italic;
+}
