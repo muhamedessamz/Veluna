@@ -26,7 +26,7 @@ const Navbar = () => {
         { name: 'Journal', path: '/journal' },
     ]
 
-    const isDarkPage = ['/about', '/contact'].includes(location.pathname)
+    const isDarkPage = ['/about', '/contact', '/shipping'].includes(location.pathname)
     const navTextColor = scrolled ? 'text-secondary' : (isDarkPage ? 'text-primary' : 'text-secondary')
 
     return (

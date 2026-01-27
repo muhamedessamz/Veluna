@@ -17,6 +17,7 @@ const Wishlist = lazy(() => import('./pages/Wishlist'))
 const Journal = lazy(() => import('./pages/Journal'))
 const Checkout = lazy(() => import('./pages/Checkout'))
 const Contact = lazy(() => import('./pages/Contact'))
+const Shipping = lazy(() => import('./pages/Shipping'))
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -49,6 +50,7 @@ function App() {
               <Route path="/journal" element={<Journal />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/shipping" element={<Shipping />} />
             </Routes>
           </Suspense>
         </AnimatePresence>

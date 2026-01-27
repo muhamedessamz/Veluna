@@ -11,7 +11,7 @@ const About = () => {
             <section className="h-[70vh] flex items-center justify-center px-6 relative overflow-hidden bg-secondary group/hero">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&q=80&w=2000"
+                        src="https://www.florihana.com/c/125-category_header/xskincare-beauty.jpg.pagespeed.ic.BLRbQX7yPN.jpg"
                         className="w-full h-full object-cover grayscale group-hover/hero:grayscale-0 transition-all duration-1000 ease-in-out scale-105 group-hover/hero:scale-100"
                         alt="Veluna Ritual"
                     />
@@ -34,7 +34,7 @@ const About = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center mb-32">
                         <div className="aspect-[4/5] bg-secondary/10 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1556228578-8d31d43950b3?auto=format&fit=crop&q=80&w=1200" className="w-full h-full object-cover grayscale" alt="Veluna Labs" />
+                            <img src="https://www.shutterstock.com/image-photo/scientist-dermatologist-testing-organic-natural-600nw-1824076961.jpg" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" alt="Veluna Labs" />
                         </div>
                         <div>
                             <h3 className="text-3xl font-serif mb-8">Celestial Science</h3>
@@ -49,7 +49,7 @@ const About = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center flex-row-reverse">
                         <div className="md:order-2 aspect-[4/5] bg-secondary/10 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1111111111111-1?auto=format&fit=crop&q=80&w=1200" className="w-full h-full object-cover grayscale" alt="Sustainability" />
+                            <img src="/images/about/sustainability.jpg" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" alt="Sustainability" />
                         </div>
                         <div className="md:order-1">
                             <h3 className="text-3xl font-serif mb-8">The Moonshot Philosophy</h3>
