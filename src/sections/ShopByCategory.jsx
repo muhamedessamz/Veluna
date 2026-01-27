@@ -5,17 +5,17 @@ const ShopByCategory = () => {
     const categories = [
         {
             name: "Cleansers",
-            image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=800",
+            image: "https://tropicskincare.com/cdn/shop/files/WebPackshots_SmoothingCleanser250ml_30ba6981-7635-4187-8e70-5645a407aff9_1000x.jpg?v=1747992543",
             desc: "Purify & Refresh"
         },
         {
             name: "Serums",
-            image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=800",
+            image: "https://media.douglas.be/medias/cGZ3ze1197242-0-global.jpg?context=bWFzdGVyfGltYWdlc3w4MzMyMHxpbWFnZS9qcGVnfGFEazBMMmd3WWk4Mk5qVTBPRE0yTlRrMU1UQXdOaTlqUjFvemVtVXhNVGszTWpReVh6QmZaMnh2WW1Gc0xtcHdad3w3ODVmN2U2Y2NhODA5MjhlMDU0ZjZhYTkwOTk4NmM0NGYxNjNiYzY3ZjQ2MGM3ZDQ4MzE5YjA4NmYzNjIxNzQ5&grid=true&imPolicy=grayScaled",
             desc: "Target & Treat"
         },
         {
             name: "Moisturizers",
-            image: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=800",
+            image: "https://glossier-prod.imgix.net/files/glossier-skincare-priming-moisturizer-carousel-1.png?auto=compress,format&cs=srgb&w=1374",
             desc: "Hydrate & Protect"
         }
     ]

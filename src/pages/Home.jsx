@@ -16,11 +16,8 @@ const Home = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.8 }}
         >
-            {/* Hero Section */}
             <section className="h-[110vh] w-full flex items-center justify-center relative overflow-hidden bg-primary px-6">
                 <HeroCanvas />
-
-                <div className="absolute inset-0 z-[1] bg-gradient-to-b from-transparent via-transparent to-primary"></div>
 
                 <div className="container mx-auto px-6 z-10 text-center">
                     <motion.h2
@@ -40,17 +37,7 @@ const Home = () => {
                         Elevate Your <br />
                         <span className="italic">Skin Ritual</span>
                     </motion.h1>
-                    <motion.div
-                        initial={{ y: 30, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ delay: 0.9, duration: 1 }}
-                    >
-                        <Link to="/shop">
-                            <button className="btn-premium">
-                                Shop the Collection
-                            </button>
-                        </Link>
-                    </motion.div>
+
                 </div>
 
                 {/* Floating Scroll Indicator */}

@@ -4,7 +4,15 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 const NewArrivals = () => {
-    const newArrivals = products.filter(p => p.isNew).slice(0, 4)
+    // Get IDs of top 4 best sellers to exclude them from new arrivals
+    const excludedIds = products
+        .filter(p => p.isBestSeller)
+        .slice(0, 4)
+        .map(p => p.id)
+
+    const newArrivals = products
+        .filter(p => p.isNew && !excludedIds.includes(p.id))
+        .slice(0, 6)
 
     return (
         <section className="py-24 bg-primary border-t border-secondary/5">

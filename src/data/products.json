@@ -7,7 +7,7 @@
         "category": "Serums",
         "skinType": "All Skin Types",
         "images": [
-            "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=800"
+            "https://glowelixir.com/wp-content/uploads/2016/12/C11.jpg"
         ],
         "ingredients": [
             "Vitamin C",
@@ -26,7 +26,7 @@
         "category": "Moisturizers",
         "skinType": "Dry to Very Dry",
         "images": [
-            "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=800"
+            "https://i0.wp.com/isladerm.com/wp-content/uploads/2023/10/Midnight-Recovery-Balm-copy.jpg?resize=600%2C600&ssl=1"
         ],
         "ingredients": [
             "Ceramides",
@@ -44,7 +44,7 @@
         "category": "Cleansers",
         "skinType": "Oily & Combo",
         "images": [
-            "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=800"
+            "https://wildgrace.ca/cdn/shop/files/MOONDUST_AHA_exfoliant_grande.jpg?v=1760297772"
         ],
         "ingredients": [
             "Bamboo Silk",
@@ -80,14 +80,15 @@
         "category": "Cleansers",
         "skinType": "Sensitive",
         "images": [
-            "https://images.unsplash.com/photo-1556228578-0d85b1a4d6e8?auto=format&fit=crop&q=80&w=800"
+            "https://static.wixstatic.com/media/108f2f_7ff5fcf7454a4dbb91d7fb7027edf9af~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/108f2f_7ff5fcf7454a4dbb91d7fb7027edf9af~mv2.jpg"
         ],
         "ingredients": [
             "Chamomile",
             "Green Tea",
             "Aloe Vera"
         ],
-        "rating": 4.6
+        "rating": 4.6,
+        "isNew": true
     },
     {
         "id": 6,
@@ -97,7 +98,7 @@
         "category": "Serums",
         "skinType": "All Skin Types",
         "images": [
-            "https://irenshizen.com/cdn/shop/products/Starlight.jpg?v=1719805528&width=5000"
+            "https://images.squarespace-cdn.com/content/v1/5d75c5504320021e8a5c6106/1651883656940-W1UJ9RX3ZRIE1KNPK7IW/10.png?format=1000w"
         ],
         "ingredients": [
             "Caffeine",
@@ -115,7 +116,7 @@
         "category": "Moisturizers",
         "skinType": "All Skin Types",
         "images": [
-            "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&q=80&w=800"
+            "https://m.media-amazon.com/images/I/51gwcM-jLYL._AC_UF1000,1000_QL80_.jpg"
         ],
         "ingredients": [
             "Rose Water",
@@ -132,7 +133,7 @@
         "category": "Cleansers",
         "skinType": "Oily & Acne-Prone",
         "images": [
-            "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&q=80&w=800"
+            "https://www.mellowbathandbody.com/cdn/shop/products/image_5ce35f8a-87b4-4bd6-8e68-4b91cc6b7ced_1024x1024.jpg?v=1620072182"
         ],
         "ingredients": [
             "Kaolin Clay",
@@ -150,7 +151,7 @@
         "category": "Moisturizers",
         "skinType": "All Skin Types",
         "images": [
-            "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&q=80&w=800"
+            "https://www.rasluxuryoils.com/cdn/shop/files/50ml_2224544f-a8bb-400c-86d6-9fe5114a2b4e.jpg?v=1735988295"
         ],
         "ingredients": [
             "Zinc Oxide",
@@ -162,47 +163,49 @@
     },
     {
         "id": 10,
-        "name": "Galaxy Eye Gel",
-        "description": "Cooling eye gel to depuff and awaken tired eyes.",
-        "price": 52.00,
-        "category": "Serums",
+        "name": "Stardust Night Bloom Mask",
+        "description": "An ethereal overnight treatment infused with nocturnal botanicals and moonstone to repair and illuminate while you dream.",
+        "price": 78.00,
+        "category": "Moisturizers",
         "skinType": "All Skin Types",
         "images": [
-            "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=800"
+            "https://bloombb.ie/cdn/shop/products/6_1200x.jpg?v=1624031443"
         ],
         "ingredients": [
-            "Cucumber Extract",
-            "Hyaluronic Acid",
-            "Aloe"
+            "Moonstone Extract",
+            "Blue Tansy Oil",
+            "Bakuchiol"
         ],
-        "rating": 4.6
+        "rating": 4.9,
+        "isNew": true
     },
     {
         "id": 11,
-        "name": "Meteor Shower Scrub",
-        "description": "Invigorating body scrub with sugar crystals and essential oils.",
-        "price": 45.00,
-        "category": "Cleansers",
+        "name": "Cosmic Radiance Facial Oil",
+        "description": "A lightweight, fast-absorbing oil that delivers a boost of antioxidants and a celestial glow to all skin types.",
+        "price": 68.0,
+        "category": "Serums",
         "skinType": "All Skin Types",
         "images": [
-            "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=800"
+            "https://zero1bio.co.uk/cdn/shop/files/Radiance-Complex-Vitamin-C-Serum-for-skin-Brightening-1.png?v=1755644714&width=1946"
         ],
         "ingredients": [
-            "Sugar",
-            "Coconut Oil",
-            "Lavender"
+            "Rosehip Oil",
+            "Squalane",
+            "Vitamin E"
         ],
-        "rating": 4.9
+        "rating": 4.9,
+        "isNew": true
     },
     {
         "id": 12,
         "name": "Comet Clarity Toner",
         "description": "Balancing toner to refine pores and restore pH balance.",
-        "price": 40.00,
+        "price": 40.0,
         "category": "Cleansers",
         "skinType": "Oily & Combo",
         "images": [
-            "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&q=80&w=800"
+            "https://sa.pixibeauty.com/cdn/shop/products/Pixi-Skintreats-Clarity-Tonic-250ml-Web.jpg?v=1739925777&width=1200"
         ],
         "ingredients": [
             "Witch Hazel",
@@ -210,5 +213,146 @@
             "Niacinamide"
         ],
         "rating": 4.7
+    },
+    {
+        "id": 13,
+        "name": "Nebula Silky Cleansing Oil",
+        "description": "A weightless oil cleanser that effortlessly melts away makeup and impurities while nourishing with blue tansy.",
+        "price": 48.0,
+        "category": "Cleansers",
+        "skinType": "All Skin Types",
+        "images": [
+            "https://nebula-eg.com/wp-content/uploads/2021/09/Whitening-cleanser.jpg"
+        ],
+        "ingredients": [
+            "Blue Tansy Oil",
+            "Squalane",
+            "Vitamin E"
+        ],
+        "rating": 4.9
+    },
+    {
+        "id": 14,
+        "name": "Milky Way Rice Essence",
+        "description": "A silky, milky treatment essence that softens texture and provides deep, weightless hydration.",
+        "price": 52.0,
+        "category": "Serums",
+        "skinType": "Normal & Dry",
+        "images": [
+            "https://m.media-amazon.com/images/I/51xhqUNkGtL._SL1000_.jpg"
+        ],
+        "ingredients": [
+            "Rice Water",
+            "Niacinamide",
+            "Ceramides"
+        ],
+        "rating": 4.8,
+        "isNew": true
+    },
+    {
+        "id": 15,
+        "name": "Zenith Peptide Firming Cream",
+        "description": "An advanced moisturizer powered by complex peptides to visibly firm, lift, and sculpt the facial contours.",
+        "price": 92.0,
+        "category": "Moisturizers",
+        "skinType": "All Skin Types",
+        "images": [
+            "https://tryzenith.ph/cdn/shop/files/PDP1_-_IMG1.1.png?v=1757427924"
+        ],
+        "ingredients": [
+            "Complex Peptides",
+            "Squalane",
+            "Shea Butter"
+        ],
+        "rating": 4.9,
+        "isBestSeller": true
+    },
+    {
+        "id": 16,
+        "name": "Nova Bakuchiol Resurfacing Serum",
+        "description": "A potent retinol alternative that smooths fine lines and refines texture without irritation.",
+        "price": 76.0,
+        "category": "Serums",
+        "skinType": "All Skin Types",
+        "images": [
+            "https://www.woodberg.de/cdn/shop/files/Herbivore-Bakuchiol-Dual-Retinol-Serum-01.jpg?v=1757486659&width=2048"
+        ],
+        "ingredients": [
+            "Bakuchiol",
+            "Rosehip Oil",
+            "Vitamin E"
+        ],
+        "rating": 4.9
+    },
+    {
+        "id": 17,
+        "name": "Astro-Algae Hydrating Mask",
+        "description": "A cooling gel mask infused with marine minerals and blue algae to instantly replump and refresh the skin.",
+        "price": 64.0,
+        "category": "Moisturizers",
+        "skinType": "All Skin Types",
+        "images": [
+            "https://www.urbanhydration.com/cdn/shop/files/3-161143969.jpg?v=1731097985&width=480"
+        ],
+        "ingredients": [
+            "Blue Algae",
+            "Hyaluronic Acid",
+            "Sea Minerals"
+        ],
+        "rating": 4.7
+    },
+    {
+        "id": 18,
+        "name": "Halo Quartz Illuminating Primer",
+        "description": "A hybrid serum-primer that imparts a soft-focus celestial glow while delivering skin-loving antioxidants.",
+        "price": 56.0,
+        "category": "Serums",
+        "skinType": "All Skin Types",
+        "images": [
+            "https://alaynewhite.com/cdn/shop/files/pdp_hero_illuminating_primer_new_grande.webp?v=1741285682"
+        ],
+        "ingredients": [
+            "Pearl Powder",
+            "Vitamin C",
+            "Rose Quartz"
+        ],
+        "rating": 5.0,
+        "isNew": true
+    },
+    {
+        "id": 19,
+        "name": "Solstice Radiance Body Oil",
+        "description": "A shimmering dry oil that deeply nourishes while leaving a sun-kissed celestial glow on the skin.",
+        "price": 62.0,
+        "category": "Body Care",
+        "skinType": "All Skin Types",
+        "images": [
+            "https://bopowomen.com/cdn/shop/products/Summer-Solstice-Body-Oil.jpg?v=1653279240"
+        ],
+        "ingredients": [
+            "Jojoba Oil",
+            "Mica",
+            "Vitamin E"
+        ],
+        "rating": 4.9,
+        "isNew": true
+    },
+    {
+        "id": 20,
+        "name": "Luna Infusion Sleeping Mask",
+        "description": "An overnight concentrate that recharges skin with moisture and essential minerals for a rested appearance.",
+        "price": 84.0,
+        "category": "Moisturizers",
+        "skinType": "All Skin Types",
+        "images": [
+            "https://wherebluebirdsfly.co.uk/wp-content/uploads/2021/03/Luna-Eyes-Self-Heating-Eye-Mask-.png"
+        ],
+        "ingredients": [
+            "Lunar Minerals",
+            "Ceramides",
+            "Shea Butter"
+        ],
+        "rating": 5.0,
+        "isBestSeller": true
     }
 ]
