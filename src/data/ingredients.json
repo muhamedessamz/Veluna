@@ -1,0 +1,54 @@
+[
+    {
+        "id": "vit-c",
+        "name": "Vitamin C (THD Ascorbate)",
+        "description": "A highly stable, oil-soluble form of Vitamin C that penetrates deep into the skin to brighten complexions and stimulate collagen production.",
+        "benefits": [
+            "Brightening",
+            "Antioxidant Protection",
+            "Anti-aging"
+        ],
+        "source": "Synthesized for stability",
+        "safety": "High",
+        "image": "https://images.unsplash.com/photo-1611080626919-7cf5a9cbab5b?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+        "id": "hyaluronic",
+        "name": "Hyaluronic Acid",
+        "description": "A moisture-binding molecule that can hold up to 1000 times its weight in water, providing immediate and long-lasting hydration.",
+        "benefits": [
+            "Intense Hydration",
+            "Plumping",
+            "Smoothing"
+        ],
+        "source": "Naturally derived fermentation",
+        "safety": "High",
+        "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+        "id": "moonstone",
+        "name": "Moonstone Extract",
+        "description": "A rare mineral extract that balances the skin's energy and enhances its natural radiance, reflecting light for an ethereal glow.",
+        "benefits": [
+            "Radiance",
+            "Soothing",
+            "Energy Balance"
+        ],
+        "source": "Natural mineral",
+        "safety": "High",
+        "image": "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+        "id": "bakuchiol",
+        "name": "Bakuchiol",
+        "description": "A plant-derived alternative to retinol that provides similar anti-aging benefits without the irritation or sun sensitivity.",
+        "benefits": [
+            "Smoothing",
+            "Anti-aging",
+            "Gentle Retexturizing"
+        ],
+        "source": "Babchi Plant",
+        "safety": "High",
+        "image": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&q=80&w=400"
+    }
+]

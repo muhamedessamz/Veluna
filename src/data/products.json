@@ -1,0 +1,214 @@
+[
+    {
+        "id": 1,
+        "name": "Celestial Glow Elixir",
+        "description": "A potent brightening serum infused with moonstone extract and stabilized Vitamin C.",
+        "price": 85.00,
+        "category": "Serums",
+        "skinType": "All Skin Types",
+        "images": [
+            "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=800"
+        ],
+        "ingredients": [
+            "Vitamin C",
+            "Moonstone Extact",
+            "Hyaluronic Acid"
+        ],
+        "rating": 4.9,
+        "isNew": true,
+        "isBestSeller": true
+    },
+    {
+        "id": 2,
+        "name": "Midnight Recovery Balm",
+        "description": "Intense overnight hydration that restores the skin barrier while you sleep.",
+        "price": 72.00,
+        "category": "Moisturizers",
+        "skinType": "Dry to Very Dry",
+        "images": [
+            "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=800"
+        ],
+        "ingredients": [
+            "Ceramides",
+            "Bakuchiol",
+            "Squalane"
+        ],
+        "rating": 4.8,
+        "isBestSeller": true
+    },
+    {
+        "id": 3,
+        "name": "Lunar Dust Exfoliant",
+        "description": "Ultra-fine physical and chemical exfoliant for instantly smooth, refined texture.",
+        "price": 54.00,
+        "category": "Cleansers",
+        "skinType": "Oily & Combo",
+        "images": [
+            "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=800"
+        ],
+        "ingredients": [
+            "Bamboo Silk",
+            "Lactic Acid",
+            "White Willow Bark"
+        ],
+        "rating": 4.7
+    },
+    {
+        "id": 4,
+        "name": "Cosmic Repair Facial Oil",
+        "description": "A luxurious blend of squalane and rosehip oil to deeply nourish and restore radiance.",
+        "price": 88.00,
+        "category": "Moisturizers",
+        "skinType": "Dry & Normal",
+        "images": [
+            "https://static1.squarespace.com/static/5baaed5577b903135793f279/5bb561afe2c48319f5161efd/62916a9ede3e744ba18b9ea2/1767800046180/cosmic+smaller+bg+new%400.5x.png?format=1500w"
+        ],
+        "ingredients": [
+            "Squalane",
+            "Rosehip Oil",
+            "Jojoba"
+        ],
+        "rating": 5.0,
+        "isNew": true,
+        "isBestSeller": true
+    },
+    {
+        "id": 5,
+        "name": "Aurora Gentle Cleanser",
+        "description": "A pH-balanced gel cleanser that removes impurities without stripping moisture.",
+        "price": 42.00,
+        "category": "Cleansers",
+        "skinType": "Sensitive",
+        "images": [
+            "https://images.unsplash.com/photo-1556228578-0d85b1a4d6e8?auto=format&fit=crop&q=80&w=800"
+        ],
+        "ingredients": [
+            "Chamomile",
+            "Green Tea",
+            "Aloe Vera"
+        ],
+        "rating": 4.6
+    },
+    {
+        "id": 6,
+        "name": "Starlight Eye Serum",
+        "description": "Targeted treatment for dark circles and fine lines with caffeine and peptides.",
+        "price": 68.00,
+        "category": "Serums",
+        "skinType": "All Skin Types",
+        "images": [
+            "https://irenshizen.com/cdn/shop/products/Starlight.jpg?v=1719805528&width=5000"
+        ],
+        "ingredients": [
+            "Caffeine",
+            "Eye Peptides",
+            "Arnica"
+        ],
+        "rating": 4.8,
+        "isBestSeller": true
+    },
+    {
+        "id": 7,
+        "name": "Cosmic Hydration Mist",
+        "description": "Refreshing facial mist to set makeup or boost hydration throughout the day.",
+        "price": 38.00,
+        "category": "Moisturizers",
+        "skinType": "All Skin Types",
+        "images": [
+            "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&q=80&w=800"
+        ],
+        "ingredients": [
+            "Rose Water",
+            "Glycerin",
+            "Witch Hazel"
+        ],
+        "rating": 4.5
+    },
+    {
+        "id": 8,
+        "name": "Eclipse Detox Mask",
+        "description": "Clarifying clay mask to draw out impurities and minimize pores.",
+        "price": 58.00,
+        "category": "Cleansers",
+        "skinType": "Oily & Acne-Prone",
+        "images": [
+            "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&q=80&w=800"
+        ],
+        "ingredients": [
+            "Kaolin Clay",
+            "Charcoal",
+            "Salicylic Acid"
+        ],
+        "rating": 4.7,
+        "isNew": true
+    },
+    {
+        "id": 9,
+        "name": "Solaris Day Cream",
+        "description": "Daily moisturizer with SPF 30 protection and antioxidants.",
+        "price": 65.00,
+        "category": "Moisturizers",
+        "skinType": "All Skin Types",
+        "images": [
+            "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&q=80&w=800"
+        ],
+        "ingredients": [
+            "Zinc Oxide",
+            "Vitamin E",
+            "Green Algae"
+        ],
+        "rating": 4.8,
+        "isNew": true
+    },
+    {
+        "id": 10,
+        "name": "Galaxy Eye Gel",
+        "description": "Cooling eye gel to depuff and awaken tired eyes.",
+        "price": 52.00,
+        "category": "Serums",
+        "skinType": "All Skin Types",
+        "images": [
+            "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=800"
+        ],
+        "ingredients": [
+            "Cucumber Extract",
+            "Hyaluronic Acid",
+            "Aloe"
+        ],
+        "rating": 4.6
+    },
+    {
+        "id": 11,
+        "name": "Meteor Shower Scrub",
+        "description": "Invigorating body scrub with sugar crystals and essential oils.",
+        "price": 45.00,
+        "category": "Cleansers",
+        "skinType": "All Skin Types",
+        "images": [
+            "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=800"
+        ],
+        "ingredients": [
+            "Sugar",
+            "Coconut Oil",
+            "Lavender"
+        ],
+        "rating": 4.9
+    },
+    {
+        "id": 12,
+        "name": "Comet Clarity Toner",
+        "description": "Balancing toner to refine pores and restore pH balance.",
+        "price": 40.00,
+        "category": "Cleansers",
+        "skinType": "Oily & Combo",
+        "images": [
+            "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&q=80&w=800"
+        ],
+        "ingredients": [
+            "Witch Hazel",
+            "Tea Tree",
+            "Niacinamide"
+        ],
+        "rating": 4.7
+    }
+]

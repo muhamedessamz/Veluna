@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #F8F5F2;
+  --color-secondary: #2D3E33;
+  --color-accent: #D4AF37;
+  --color-neutral: #E5E5E5;
+  --color-pearl: #FFFFFF;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: Inter, sans-serif;
+  --font-luxury: Montserrat, sans-serif;
+
+  --animate-slow-fade: fadeIn 1.5s ease-in-out;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-primary text-secondary font-sans antialiased overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif font-medium;
+  }
+}
+
+@layer components {
+  .btn-premium {
+    @apply px-8 py-3 bg-secondary text-primary font-luxury text-sm tracking-widest uppercase transition-all duration-300 hover:bg-secondary/90 hover:tracking-[0.2em] active:scale-95;
+  }
+
+  .btn-outline {
+    @apply px-8 py-3 border border-secondary text-secondary font-luxury text-sm tracking-widest uppercase transition-all duration-300 hover:bg-secondary hover:text-primary active:scale-95;
+  }
+
+  .glass-panel {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-primary;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-secondary/20 rounded-full hover:bg-secondary/40 transition-colors;
+}
+
+/* Custom Cursor Placeholder */
+.custom-cursor {
+  @apply fixed top-0 left-0 w-8 h-8 rounded-full border border-secondary pointer-events-none z-[9999] mix-blend-difference transition-transform duration-100 ease-out;
+}
