@@ -52,8 +52,12 @@ const CustomCursor = () => {
                     translateY: '-50%',
                 }}
                 animate={{
-                    scale: isHovering ? 2 : 1,
-                    opacity: isHovering ? 0.15 : 1,
+                    scale: isHovering ? 1.5 : 1,
+                    opacity: isHovering ? 0.3 : 1,
+                }}
+                transition={{
+                    scale: { type: 'spring', damping: 20, stiffness: 150 },
+                    opacity: { duration: 0.3 }
                 }}
                 className="fixed top-0 left-0 w-8 h-8 rounded-full border border-secondary pointer-events-none z-[9999] mix-blend-difference hidden md:block"
             />

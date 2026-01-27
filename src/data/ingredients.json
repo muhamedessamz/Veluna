@@ -10,7 +10,7 @@
         ],
         "source": "Synthesized for stability",
         "safety": "High",
-        "image": "https://images.unsplash.com/photo-1611080626919-7cf5a9cbab5b?auto=format&fit=crop&q=80&w=400"
+        "image": "https://m.media-amazon.com/images/I/71nRQPZvnbL._AC_UF350,350_QL80_.jpg"
     },
     {
         "id": "hyaluronic",
@@ -23,7 +23,7 @@
         ],
         "source": "Naturally derived fermentation",
         "safety": "High",
-        "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=400"
+        "image": "https://www.gosupps.com/media/catalog/product/cache/25/image/1500x/040ec09b1e35df139433887a97daa66f/6/1/61tZJPUZ4zL._SL1500_.jpg"
     },
     {
         "id": "moonstone",
@@ -36,7 +36,7 @@
         ],
         "source": "Natural mineral",
         "safety": "High",
-        "image": "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&q=80&w=400"
+        "image": "https://phlur.com/cdn/shop/files/6-PHLUR_PDP_BodyMist-Moonstone-80z_Editorial.jpg?v=1713300177&width=1946"
     },
     {
         "id": "bakuchiol",
@@ -49,6 +49,32 @@
         ],
         "source": "Babchi Plant",
         "safety": "High",
-        "image": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&q=80&w=400"
+        "image": "https://i5.walmartimages.com/seo/Beauty-by-Earth-YouthRestoration-Bakuchiol-Face-Serum_b6dd9350-abe6-4107-b9b0-e62c205a8ee6.9bbcd7301e72b76418d8d5f6cdc18cea.jpeg"
+    },
+    {
+        "id": "blue-tansy",
+        "name": "Blue Tansy Oil",
+        "description": "A rare Mediterranean botanical with a deep sapphire hue, known for its powerful anti-inflammatory and skin-calming properties.",
+        "benefits": [
+            "Anti-inflammatory",
+            "Calming",
+            "Redness Reduction"
+        ],
+        "source": "Steam-distilled flowers",
+        "safety": "High",
+        "image": "https://www.auracacia.com/media/wysiwyg/Blue_Tansy_380x380.jpg"
+    },
+    {
+        "id": "peptides",
+        "name": "Complex Peptides",
+        "description": "Short chains of amino acids that act as building blocks for proteins like collagen and elastin, signaling the skin to repair and firm itself.",
+        "benefits": [
+            "Firming",
+            "Repairing",
+            "Elasticity"
+        ],
+        "source": "Scientific synthesis",
+        "safety": "High",
+        "image": "https://static.beautytocare.com/cdn-cgi/image/f=auto/media/catalog/product/m/e/medik8-liquid-peptides-advanced-md-30-multi-peptide-complex-serum-30ml.jpg"
     }
 ]

@@ -19,18 +19,18 @@ const ProductCard = ({ product }) => {
                     <img
                         src={product.images[0]}
                         alt={product.name}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 will-change-transform"
                     />
 
-                    {/* Badges */}
-                    <div className="absolute top-4 left-4 flex flex-col gap-2">
+                    {/* Badges - Isolated from cursor/hover artifacting if possible */}
+                    <div className="absolute top-4 left-4 flex flex-col gap-2 z-20 pointer-events-none">
                         {product.isNew && (
-                            <span className="bg-primary text-secondary text-[8px] tracking-[0.2em] uppercase px-3 py-1 font-luxury">
+                            <span className="bg-primary text-secondary text-[8px] tracking-[0.2em] uppercase px-3 py-1 font-luxury shadow-sm">
                                 New
                             </span>
                         )}
                         {product.isBestSeller && (
-                            <span className="bg-accent text-white text-[8px] tracking-[0.2em] uppercase px-3 py-1 font-luxury">
+                            <span className="bg-accent text-white text-[8px] tracking-[0.2em] uppercase px-3 py-1 font-luxury shadow-sm">
                                 Best Seller
                             </span>
                         )}
