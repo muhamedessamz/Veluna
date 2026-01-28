@@ -42,7 +42,7 @@ const ShopByCategory = () => {
                                 <img
                                     src={cat.image}
                                     alt={cat.name}
-                                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                                    className="w-full h-full object-cover object-top transition-transform duration-1000 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 z-20 flex flex-col items-center justify-end text-center p-10 pb-12">
                                     <h3 className="text-3xl font-serif text-white mb-2 transform group-hover:-translate-y-2 transition-transform duration-500">

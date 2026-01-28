@@ -66,8 +66,8 @@ const Footer = () => {
                 <div className="border-t border-primary/10 pt-10 flex flex-col md:flex-row justify-between items-center text-[10px] tracking-[0.2em] uppercase opacity-40">
                     <p>© 2026 VELUNA BEAUTY. ALL RIGHTS RESERVED.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
+                        <Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link>
+                        <Link to="/terms-of-service" className="hover:text-accent transition-colors">Terms of Service</Link>
                     </div>
                 </div>
             </div>

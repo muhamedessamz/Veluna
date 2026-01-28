@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import CustomCursor from './components/CustomCursor'
+import ScrollToTop from './components/ScrollToTop'
 import Loader from './components/Loader'
 import Navbar from './layouts/Navbar'
 import Footer from './layouts/Footer'
@@ -19,6 +20,9 @@ const JournalDetail = lazy(() => import('./pages/JournalDetail'))
 const Checkout = lazy(() => import('./pages/Checkout'))
 const Contact = lazy(() => import('./pages/Contact'))
 const Shipping = lazy(() => import('./pages/Shipping'))
+const FAQs = lazy(() => import('./pages/FAQs'))
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
+const TermsOfService = lazy(() => import('./pages/TermsOfService'))
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -34,6 +38,7 @@ function App() {
         {loading && <Loader key="loader" />}
       </AnimatePresence>
       <CustomCursor />
+      <ScrollToTop />
       <Navbar />
       <CartSidebar />
       <main className="flex-grow">
@@ -53,6 +58,9 @@ function App() {
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/shipping" element={<Shipping />} />
+              <Route path="/faq" element={<FAQs />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
             </Routes>
           </Suspense>
         </AnimatePresence>
