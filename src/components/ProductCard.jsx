@@ -18,7 +18,12 @@ const ProductCard = ({ product }) => {
                 <div className="relative aspect-[3/4] overflow-hidden bg-neutral/20 mb-6">
                     <img
                         src={product.images[0]}
+                        srcSet={`${product.images[0]}?format=300w 300w, ${product.images[0]}?format=600w 600w`}
+                        sizes="(max-width: 640px) 45vw, 300px"
                         alt={product.name}
+                        width="600"
+                        height="800"
+                        loading="lazy"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 will-change-transform"
                     />
 
@@ -43,6 +48,7 @@ const ProductCard = ({ product }) => {
                                 e.preventDefault();
                                 toggleWishlist(product);
                             }}
+                            aria-label={isWishlisted ? `Remove ${product.name} from wishlist` : `Add ${product.name} to wishlist`}
                             className={`w-10 h-10 flex items-center justify-center rounded-full glass-panel transition-colors ${isWishlisted ? 'text-accent' : 'text-secondary hover:text-accent'
                                 }`}
                         >
@@ -57,6 +63,7 @@ const ProductCard = ({ product }) => {
                                 e.preventDefault();
                                 addToCart(product);
                             }}
+                            aria-label={`Add ${product.name} to cart`}
                             className="w-full bg-secondary text-primary py-3 flex items-center justify-center gap-3 font-luxury text-[10px] tracking-[0.2em] uppercase hover:bg-opacity-90 transition-colors"
                         >
                             <Plus size={16} />

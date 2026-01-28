@@ -37,11 +37,18 @@ const ShopByCategory = () => {
                             transition={{ delay: index * 0.2 }}
                             className="group relative cursor-pointer overflow-hidden aspect-[3/4]"
                         >
-                            <Link to="/shop" className="block w-full h-full">
+                            <Link
+                                to="/shop"
+                                className="block w-full h-full"
+                                aria-label={`Shop ${cat.name}: ${cat.desc}`}
+                            >
                                 <div className="absolute inset-x-0 bottom-0 top-1/2 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-80 group-hover:opacity-100 transition-opacity duration-700" />
                                 <img
                                     src={cat.image}
                                     alt={cat.name}
+                                    width="600"
+                                    height="800"
+                                    loading="lazy"
                                     className="w-full h-full object-cover object-top transition-transform duration-1000 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 z-20 flex flex-col items-center justify-end text-center p-10 pb-12">

@@ -14,7 +14,7 @@ const Loader = () => {
                 transition={{ duration: 1, ease: "easeOut" }}
                 className="mb-8"
             >
-                <img src="/logo.png" alt="Veluna Logo" className="h-20 w-auto mx-auto" />
+                <img src="/logo.png" alt="Veluna Logo" width="80" height="80" className="h-20 w-auto mx-auto" />
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}

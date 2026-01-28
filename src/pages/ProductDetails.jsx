@@ -32,8 +32,14 @@ const ProductDetails = () => {
 
                 <div className="flex flex-col lg:flex-row gap-20">
                     {/* Gallery Placeholder */}
-                    <div className="w-full lg:w-1/2 aspect-[3/4] bg-neutral/10 overflow-hidden">
-                        <img src={product.images[0]} alt={product.name} className="w-full h-full object-cover" />
+                    <div className="aspect-square w-full overflow-hidden">
+                        <img
+                            src={product.images[0]}
+                            alt={product.name}
+                            width="1200"
+                            height="1200"
+                            className="w-full h-full object-cover"
+                        />
                     </div>
 
                     {/* Info */}
@@ -72,15 +78,28 @@ const ProductDetails = () => {
 
                         <div className="flex flex-col sm:flex-row gap-4">
                             <div className="flex items-center border border-secondary/20 px-4 py-2">
-                                <button onClick={() => setQty(Math.max(1, qty - 1))} className="px-3 py-1 opacity-40 hover:opacity-100">-</button>
-                                <span className="px-6 font-luxury">{qty}</span>
-                                <button onClick={() => setQty(qty + 1)} className="px-3 py-1 opacity-40 hover:opacity-100">+</button>
+                                <button
+                                    onClick={() => setQty(Math.max(1, qty - 1))}
+                                    className="px-3 py-1 opacity-40 hover:opacity-100"
+                                    aria-label="Decrease quantity"
+                                >
+                                    -
+                                </button>
+                                <span className="w-12 text-center font-luxury">{qty}</span>
+                                <button
+                                    onClick={() => setQty(qty + 1)}
+                                    className="px-3 py-1 opacity-40 hover:opacity-100"
+                                    aria-label="Increase quantity"
+                                >
+                                    +
+                                </button>
                             </div>
                             <button
                                 onClick={() => addToCart({ ...product, quantity: qty })}
-                                className="btn-premium flex-grow"
+                                className="flex-1 btn-premium py-5"
+                                aria-label={`Add ${product.name} to cart`}
                             >
-                                Add to Cart
+                                Add to Ritual — ${(product.price * qty).toFixed(2)}
                             </button>
                             <button
                                 onClick={() => toggleWishlist(product)}

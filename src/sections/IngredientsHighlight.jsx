@@ -30,7 +30,7 @@ const IngredientsHighlight = () => {
                             className="group relative aspect-[4/5] bg-[#ECE8E4] flex flex-col items-center p-12 text-center cursor-pointer transition-all duration-700 hover:shadow-2xl"
                         >
                             <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-700">
-                                <img src={ing.image} alt="" className="w-full h-full object-cover grayscale" />
+                                <img src={ing.image} alt="" width="400" height="500" loading="lazy" className="w-full h-full object-cover grayscale" />
                             </div>
 
                             {/* Top Content wrapper with flex-grow to push button down */}
@@ -57,7 +57,10 @@ const IngredientsHighlight = () => {
                             </div>
 
                             {/* Button forced to bottom */}
-                            <button className="mt-auto text-[10px] tracking-[0.2em] uppercase font-luxury border-b border-secondary/20 group-hover:border-accent group-hover:text-accent transition-all z-10">
+                            <button
+                                className="mt-auto text-[10px] tracking-[0.2em] uppercase font-luxury border-b border-secondary/20 group-hover:border-accent group-hover:text-accent transition-all z-10"
+                                aria-label={`Read more about ${ing.name}`}
+                            >
                                 Learn More
                             </button>
                         </motion.div>
@@ -91,7 +94,7 @@ const IngredientsHighlight = () => {
                             className="relative w-full max-w-4xl bg-primary shadow-2xl overflow-hidden flex flex-col md:flex-row"
                         >
                             <div className="w-full md:w-1/2 aspect-square md:aspect-auto">
-                                <img src={selected.image} alt={selected.name} className="w-full h-full object-cover" />
+                                <img src={selected.image} alt={selected.name} width="600" height="600" loading="lazy" className="w-full h-full object-cover" />
                             </div>
                             <div className="w-full md:w-1/2 p-12">
                                 <button

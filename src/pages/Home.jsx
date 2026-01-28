@@ -53,8 +53,8 @@ const Home = () => {
                             <span className="italic font-light opacity-80">Skin Ritual</span>
                         </motion.h1>
 
-                        {/* Mobile Spacer to make room for image in the middle of flow */}
-                        <div className="h-[420px] md:hidden" />
+                        {/* Mobile Spacer to make room for image: 350px width * (900/700 aspect) = ~450px */}
+                        <div className="h-[450px] md:hidden" />
 
                         <motion.div
                             initial={{ y: 20, opacity: 0 }}
@@ -119,6 +119,9 @@ const Home = () => {
                                 <img
                                     src="https://images.squarespace-cdn.com/content/v1/5baaed5577b903135793f279/d4849a61-f284-47da-9643-718d5683ebe9/0862055f7911008fab6f9069b2452284.jpg?format=2500w"
                                     alt="Veluna Essence"
+                                    width="1200"
+                                    height="1500"
+                                    loading="lazy"
                                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
                                 />
                             </div>

@@ -4,33 +4,15 @@ import heroProduct from '../assets/images/hero-product-matching.png'
 const HeroImage = () => {
     return (
         <div className="absolute inset-0 flex items-center justify-center md:items-center md:justify-end md:pr-[5%] pointer-events-none overflow-hidden">
-            <motion.div
-                initial={{ opacity: 0, scale: 1.1, x: 50 }}
-                animate={{
-                    opacity: 1,
-                    scale: 1,
-                    x: 0,
-                    y: [0, -15, 0], // Reduced float for mobile
-                    rotateZ: [-3, 3, -3]
-                }}
-                transition={{
-                    opacity: { duration: 2, ease: "easeOut" },
-                    x: { duration: 1.8, ease: [0.22, 1, 0.36, 1] },
-                    scale: { duration: 2, ease: "easeOut" },
-                    y: {
-                        duration: 5,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    },
-                    rotateZ: {
-                        duration: 7,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    }
-                }}
-                className="relative w-[350px] md:w-[600px] lg:w-[700px] mt-10 md:mt-0"
-            >
-                {/* Product Highlights */}
+            {/* 
+               CRITICAL PERFORMANCE FIX:
+               Removed 'motion.div' wrapper around the main image.
+               Framer Motion's 'initial={{ opacity: 0 }}' hides the LCP element until JS loads.
+               Now the image is visible immediately (HTML-first).
+            */}
+            <div className="relative w-[350px] md:w-[600px] lg:w-[700px] mt-10 md:mt-0 aspect-[7/9] md:aspect-auto">
+
+                {/* Product Highlights - Animated separately */}
                 <HighlightLabel
                     text="01 / Pure Botanical"
                     className="absolute -left-10 md:-left-4 top-[15%]"
@@ -51,12 +33,32 @@ const HeroImage = () => {
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#1A1A1A]/10 blur-[80px] md:blur-[120px] rounded-full -z-10 opacity-50 md:opacity-70" />
 
 
-                <img
-                    src={heroProduct}
-                    alt="Veluna Serum"
-                    className="w-full h-auto object-contain brightness-[1.02] drop-shadow-xl md:drop-shadow-none"
-                />
-            </motion.div>
+                {/* Animated Image Wrapper using simple CSS/Framer for non-blocking float */}
+                <motion.div
+                    animate={{
+                        y: [0, -15, 0],
+                        rotateZ: [-3, 3, -3]
+                    }}
+                    transition={{
+                        y: { duration: 5, repeat: Infinity, ease: "easeInOut" },
+                        rotateZ: { duration: 7, repeat: Infinity, ease: "easeInOut" }
+                    }}
+                    className="w-full h-full"
+                >
+                    {/* Responsive Image with srcset (using same source as placeholder for now, but structure is ready) */}
+                    <img
+                        src={heroProduct}
+                        srcSet={`${heroProduct} 350w, ${heroProduct} 700w`}
+                        sizes="(max-width: 768px) 350px, 700px"
+                        alt="Veluna Serum"
+                        width="700"
+                        height="900"
+                        fetchPriority="high"
+                        loading="eager"
+                        className="w-full h-full object-contain brightness-[1.02] drop-shadow-xl md:drop-shadow-none"
+                    />
+                </motion.div>
+            </div>
         </div>
     )
 }

@@ -9,16 +9,16 @@ const Footer = () => {
                     {/* Brand Info */}
                     <div>
                         <div className="flex items-center space-x-3 mb-6">
-                            <img src="/logo.png" alt="Veluna Logo" className="h-10 w-auto" />
+                            <img src="/logo.png" alt="Veluna Logo" width="40" height="40" className="h-10 w-auto" />
                             <h3 className="font-serif text-3xl">Veluna</h3>
                         </div>
                         <p className="font-luxury text-sm tracking-wide leading-relaxed opacity-80 mb-8">
                             Elevating your skin ritual through celestial science and botanical wisdom. Pure. Potent. Proven.
                         </p>
                         <div className="flex space-x-5">
-                            <a href="#" className="hover:text-accent transition-colors"><Instagram size={20} strokeWidth={1.5} /></a>
-                            <a href="#" className="hover:text-accent transition-colors"><Facebook size={20} strokeWidth={1.5} /></a>
-                            <a href="#" className="hover:text-accent transition-colors"><Twitter size={20} strokeWidth={1.5} /></a>
+                            <a href="#" className="hover:text-accent transition-colors" aria-label="Follow us on Instagram"><Instagram size={20} strokeWidth={1.5} /></a>
+                            <a href="#" className="hover:text-accent transition-colors" aria-label="Follow us on Facebook"><Facebook size={20} strokeWidth={1.5} /></a>
+                            <a href="#" className="hover:text-accent transition-colors" aria-label="Follow us on Twitter"><Twitter size={20} strokeWidth={1.5} /></a>
                         </div>
                     </div>
 
@@ -50,13 +50,15 @@ const Footer = () => {
                         <p className="text-sm opacity-80 font-light mb-6">
                             Subscribe to receive celestial skincare tips and early access to new rituals.
                         </p>
-                        <form className="relative">
+                        <form className="relative" aria-label="Newsletter subscription">
                             <input
                                 type="email"
                                 placeholder="Your email address"
-                                className="w-full bg-transparent border-b border-primary/20 py-2 focus:border-accent outline-none text-sm placeholder:text-primary/40 transition-colors"
+                                className="w-full bg-transparent border-b border-primary/20 pb-4 pr-12 text-sm focus:outline-none focus:border-accent transition-colors"
+                                aria-label="Email address for newsletter"
+                                required
                             />
-                            <button type="submit" className="absolute right-0 top-1/2 -translate-y-1/2 text-accent">
+                            <button type="submit" className="absolute right-0 top-1/2 -translate-y-1/2 text-accent" aria-label="Subscribe">
                                 <Mail size={18} strokeWidth={1.5} />
                             </button>
                         </form>
@@ -65,25 +67,25 @@ const Footer = () => {
 
                 <div className="border-t border-primary/10 pt-10 flex flex-col md:flex-row justify-between items-center text-[10px] tracking-[0.2em] uppercase">
                     {/* Left: Copyright */}
-                    <div className="opacity-40 mb-4 md:mb-0">
+                    <div className="opacity-60 mb-4 md:mb-0">
                         <p>© 2026 VELUNA BEAUTY. ALL RIGHTS RESERVED.</p>
                     </div>
 
                     {/* Center: Developer Credits */}
                     <div className="flex items-center gap-4 mb-4 md:mb-0">
-                        <span className="opacity-60">Developed by Mohamed Essam</span>
+                        <span className="opacity-80">Developed by Mohamed Essam</span>
                         <div className="flex items-center gap-3 ml-1">
-                            <a href="https://www.linkedin.com/in/mohamedessamz/" target="_blank" rel="noopener noreferrer" className="opacity-40 hover:opacity-100 hover:text-accent transition-all duration-300">
+                            <a href="https://www.linkedin.com/in/mohamedessamz/" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300" aria-label="Mohamed Essam on LinkedIn">
                                 <Linkedin size={14} strokeWidth={1.5} />
                             </a>
-                            <a href="mailto:mohamedessamzakariaa@gmail.com" className="opacity-40 hover:opacity-100 hover:text-accent transition-all duration-300">
+                            <a href="mailto:mohamedessamzakariaa@gmail.com" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300" aria-label="Email Mohamed Essam">
                                 <Mail size={14} strokeWidth={1.5} />
                             </a>
                         </div>
                     </div>
 
                     {/* Right: Legal Links */}
-                    <div className="flex space-x-6 opacity-40">
+                    <div className="flex space-x-6 opacity-60">
                         <Link to="/privacy-policy" className="hover:opacity-100 hover:text-accent transition-all duration-300">Privacy Policy</Link>
                         <Link to="/terms-of-service" className="hover:opacity-100 hover:text-accent transition-all duration-300">Terms of Service</Link>
                     </div>

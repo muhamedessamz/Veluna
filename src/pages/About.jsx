@@ -34,7 +34,14 @@ const About = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center mb-32">
                         <div className="aspect-[4/5] bg-secondary/10 overflow-hidden">
-                            <img src="https://www.shutterstock.com/image-photo/scientist-dermatologist-testing-organic-natural-600nw-1824076961.jpg" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" alt="Botanical Science" />
+                            <img
+                                src="https://images.squarespace-cdn.com/content/v1/5baaed5577b903135793f279/d4849a61-f284-47da-9643-718d5683ebe9/0862055f7911008fab6f9069b2452284.jpg?format=2500w"
+                                alt="Veluna Essence"
+                                width="1200"
+                                height="1500"
+                                loading="lazy"
+                                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                            />
                         </div>
                         <div>
                             <h3 className="text-3xl font-serif mb-8">Celestial Science</h3>
@@ -48,8 +55,14 @@ const About = () => {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center flex-row-reverse">
-                        <div className="md:order-2 aspect-[4/5] bg-secondary/10 overflow-hidden">
-                            <img src="/images/about/sustainability.jpg" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" alt="Sustainability" />
+                        <div className="md:order-2 aspect-[16/9] w-full overflow-hidden">
+                            <img
+                                src="/images/about/sustainability.jpg"
+                                alt="Sustainable packaging"
+                                width="1200"
+                                height="800"
+                                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                            />
                         </div>
                         <div className="md:order-1">
                             <h3 className="text-3xl font-serif mb-8">The Moonshot Philosophy</h3>

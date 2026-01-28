@@ -39,6 +39,7 @@ const Navbar = () => {
                 <button
                     className={`lg:hidden ${navTextColor}`}
                     onClick={() => setIsOpen(!isOpen)}
+                    aria-label={isOpen ? "Close Menu" : "Open Menu"}
                 >
                     {isOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
@@ -64,6 +65,8 @@ const Navbar = () => {
                     <img
                         src="/logo.png"
                         alt="Veluna Icon"
+                        width="40"
+                        height="40"
                         className={`h-10 w-auto transition-all duration-500 ${!scrolled && isDarkPage ? 'filter drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]' : ''}`}
                     />
                     <span className={`font-serif text-3xl tracking-tighter ${navTextColor} group-hover:text-accent transition-colors ${!scrolled && isDarkPage ? 'drop-shadow-sm' : ''}`}>
@@ -73,18 +76,19 @@ const Navbar = () => {
 
                 {/* Icons */}
                 <div className={`flex items-center space-x-6 ${navTextColor} ${!scrolled && isDarkPage ? 'drop-shadow-sm' : ''}`}>
-                    <button className="hover:text-accent transition-colors hidden sm:block">
+                    <button className="hover:text-accent transition-colors hidden sm:block" aria-label="Search">
                         <Search size={20} strokeWidth={1.5} />
                     </button>
-                    <Link to="/account" className="hover:text-accent transition-colors hidden sm:block">
+                    <Link to="/account" className="hover:text-accent transition-colors hidden sm:block" aria-label="My Account">
                         <User size={20} strokeWidth={1.5} />
                     </Link>
-                    <button className="hover:text-accent transition-colors hidden sm:block relative">
+                    <button className="hover:text-accent transition-colors hidden sm:block relative" aria-label="Wishlist">
                         <Heart size={20} strokeWidth={1.5} />
                     </button>
                     <button
                         onClick={toggleCart}
                         className="hover:text-accent transition-colors relative"
+                        aria-label={`Shopping bag with ${cartCount} items`}
                     >
                         <ShoppingBag size={20} strokeWidth={1.5} />
                         {cartCount > 0 && (
@@ -117,9 +121,9 @@ const Navbar = () => {
                                 </Link>
                             ))}
                             <div className="pt-6 border-t border-secondary/10 flex space-x-6">
-                                <Link to="/account" onClick={() => setIsOpen(false)} className="text-secondary"><User size={24} /></Link>
-                                <Link to="/wishlist" onClick={() => setIsOpen(false)} className="text-secondary"><Heart size={24} /></Link>
-                                <button className="text-secondary"><Search size={24} /></button>
+                                <Link to="/account" onClick={() => setIsOpen(false)} aria-label="My Account" className="text-secondary"><User size={24} /></Link>
+                                <Link to="/wishlist" onClick={() => setIsOpen(false)} aria-label="Wishlist" className="text-secondary"><Heart size={24} /></Link>
+                                <button className="text-secondary" aria-label="Search"><Search size={24} /></button>
                             </div>
                         </div>
                     </motion.div>

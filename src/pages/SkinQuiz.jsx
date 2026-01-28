@@ -66,6 +66,7 @@ const SkinQuiz = () => {
                                     <button
                                         key={opt}
                                         onClick={() => handleSelect(opt)}
+                                        aria-label={`Select ${opt}`}
                                         className="group border border-secondary/10 p-6 text-left hover:border-accent hover:bg-accent/5 transition-all flex justify-between items-center"
                                     >
                                         <span className="font-luxury text-xs tracking-widest uppercase">{opt}</span>
