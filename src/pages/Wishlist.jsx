@@ -26,7 +26,10 @@ const Wishlist = () => {
                         <p className="font-luxury text-sm tracking-widest uppercase opacity-40 mb-8">
                             Your wishlist is empty
                         </p>
-                        <Link to="/shop" className="btn-premium inline-block">
+                        <Link
+                            to="/shop"
+                            className="inline-block border border-secondary text-secondary px-8 py-3 text-xs tracking-[0.2em] font-luxury uppercase hover:bg-secondary hover:text-primary transition-all duration-300"
+                        >
                             Explore Collection
                         </Link>
                     </div>
