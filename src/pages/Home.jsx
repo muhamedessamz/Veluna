@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import HeroCanvas from '../components/canvas/HeroCanvas'
+import HeroImage from '../components/HeroImage'
 import BestSellers from '../sections/BestSellers'
 import IngredientsHighlight from '../sections/IngredientsHighlight'
 import NewArrivals from '../sections/NewArrivals'
@@ -16,38 +16,78 @@ const Home = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.8 }}
         >
-            <section className="h-[110vh] w-full flex items-center justify-center relative overflow-hidden bg-primary px-6">
-                <HeroCanvas />
-
-                <div className="container mx-auto px-6 z-10 text-center">
-                    <motion.h2
-                        initial={{ y: 30, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ delay: 0.5, duration: 1 }}
-                        className="text-[10px] tracking-[0.4em] uppercase mb-6 text-secondary/60 font-luxury"
-                    >
-                        The Future of Botanical Science
-                    </motion.h2>
+            <section className="min-h-screen md:h-screen w-full flex flex-col md:flex-row items-center relative overflow-hidden bg-[#fdfbf7] pt-32 md:pt-0 pb-12 md:pb-0">
+                {/* Background Large Typography - Hidden on mobile for clarity */}
+                <div className="absolute inset-0 hidden md:flex items-center justify-center select-none pointer-events-none overflow-hidden">
                     <motion.h1
-                        initial={{ y: 30, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ delay: 0.7, duration: 1 }}
-                        className="text-6xl md:text-8xl lg:text-9xl mb-12 font-serif text-secondary"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 0.08, scale: 1 }}
+                        transition={{ duration: 2, ease: "easeOut" }}
+                        className="text-[30vw] font-serif font-bold text-[#1A1A1A] leading-none tracking-tighter"
                     >
-                        Elevate Your <br />
-                        <span className="italic">Skin Ritual</span>
+                        VELUNA
                     </motion.h1>
-
                 </div>
 
-                {/* Floating Scroll Indicator */}
+                <HeroImage />
+
+                <div className="container mx-auto px-6 md:px-12 z-10 flex items-center md:min-h-[70vh]">
+                    <div className="max-w-3xl w-full text-center md:text-left">
+                        <motion.div
+                            initial={{ x: -20, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
+                        >
+                            <h2 className="text-[10px] md:text-[12px] tracking-[0.4em] md:tracking-[0.5em] uppercase mb-4 md:mb-6 text-[#D4B98E] font-medium">
+                                The Future of Botanical Science
+                            </h2>
+                        </motion.div>
+
+                        <motion.h1
+                            initial={{ y: 30, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ delay: 0.7, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+                            className="text-[14vw] md:text-[8vw] lg:text-[7vw] leading-[0.9] md:leading-[0.85] font-serif text-[#1A1A1A] mb-8 tracking-[-0.02em]"
+                        >
+                            Elevate Your <br />
+                            <span className="italic font-light opacity-80">Skin Ritual</span>
+                        </motion.h1>
+
+                        {/* Mobile Spacer to make room for image in the middle of flow */}
+                        <div className="h-[420px] md:hidden" />
+
+                        <motion.div
+                            initial={{ y: 20, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ delay: 1, duration: 1 }}
+                            className="flex flex-col items-center md:items-start gap-8"
+                        >
+                            <p className="text-base md:text-xl text-[#444444] font-light max-w-md leading-relaxed">
+                                Premium skincare powered by science. Discover the transformative power of lunar-harvested botanicals.
+                            </p>
+
+                            <Link to="/shop" className="w-full md:w-fit">
+                                <motion.button
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    className="w-full md:w-auto px-12 py-5 bg-[#1A1A1A] text-white text-[10px] tracking-[0.3em] uppercase transition-all duration-300 hover:bg-[#D4B98E]"
+                                >
+                                    Shop Collection
+                                </motion.button>
+                            </Link>
+                        </motion.div>
+                    </div>
+                </div>
+
+                {/* Vertical Scroll Indicator - Editorial Style */}
                 <motion.div
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{ repeat: Infinity, duration: 2 }}
-                    className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-2"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 2, duration: 1 }}
+                    className="absolute bottom-12 left-12 hidden md:flex items-center space-x-4"
                 >
-                    <span className="text-[9px] tracking-[0.2em] uppercase text-secondary/40 font-luxury">Scroll</span>
-                    <div className="w-[1px] h-12 bg-secondary/20 h-0 animate-[grow_2s_ease-in-out_infinite]"></div>
+                    <div className="w-12 h-[1px] bg-[#1A1A1A]/20" />
+                    <span className="text-[10px] tracking-[0.3em] uppercase text-[#1A1A1A]/40 font-medium">Explore Details</span>
                 </motion.div>
             </section>
 
