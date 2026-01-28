@@ -33,17 +33,17 @@ const HeroImage = () => {
                 {/* Product Highlights */}
                 <HighlightLabel
                     text="01 / Pure Botanical"
-                    className="absolute -left-2 md:-left-4 top-[15%]"
+                    className="absolute -left-10 md:-left-4 top-[15%]"
                     delay={2.5}
                 />
                 <HighlightLabel
                     text="02 / Solar Infused"
-                    className="absolute -right-2 md:-right-4 top-1/2"
+                    className="absolute -right-10 md:-right-4 top-1/2"
                     delay={2.8}
                 />
                 <HighlightLabel
                     text="03 / Deep Hydration"
-                    className="absolute -left-1 md:-left-2 bottom-[15%]"
+                    className="absolute -left-8 md:-left-2 bottom-[15%]"
                     delay={3.1}
                 />
 
@@ -68,8 +68,8 @@ const HighlightLabel = ({ text, className, delay }) => (
         transition={{ delay, duration: 1 }}
         className={`flex items-center space-x-2 md:space-x-4 z-20 ${className}`}
     >
-        <div className="w-8 h-[1px] bg-[#1A1A1A]/20" />
-        <span className="text-[9px] tracking-[0.3em] uppercase text-[#1A1A1A]/40 font-medium whitespace-nowrap">
+        <div className="w-4 md:w-8 h-[1px] bg-[#1A1A1A]/20" />
+        <span className="text-[7px] md:text-[9px] tracking-[0.2em] md:tracking-[0.3em] uppercase text-[#1A1A1A]/40 font-medium whitespace-nowrap">
             {text}
         </span>
     </motion.div>

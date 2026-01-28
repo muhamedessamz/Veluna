@@ -34,7 +34,7 @@ const About = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center mb-32">
                         <div className="aspect-[4/5] bg-secondary/10 overflow-hidden">
-                            <img src="https://www.shutterstock.com/image-photo/scientist-dermatologist-testing-organic-natural-600nw-1824076961.jpg" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" alt="Veluna Labs" />
+                            <img src="https://www.shutterstock.com/image-photo/scientist-dermatologist-testing-organic-natural-600nw-1824076961.jpg" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" alt="Botanical Science" />
                         </div>
                         <div>
                             <h3 className="text-3xl font-serif mb-8">Celestial Science</h3>
@@ -42,7 +42,7 @@ const About = () => {
                                 Veluna was founded in 2024 with a radical mission: to synchronize skincare with the biological rhythms of the human body and the celestial cycles of our planet.
                             </p>
                             <p className="text-lg font-light text-secondary/60 leading-relaxed">
-                                By harvesting our botanical ingredients during specific lunar phases, we maximize their enzymatic potency. We then stabilize these rare extracts in our laboratories using cutting-edge peptide technology.
+                                By selecting ingredients harvested during specific lunar phases, we ensure maximum enzymatic potency. These rare extracts are then stabilized using cutting-edge peptide technology and specialized botanical science.
                             </p>
                         </div>
                     </div>

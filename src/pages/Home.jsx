@@ -101,15 +101,15 @@ const Home = () => {
             <section className="py-32 bg-secondary text-primary overflow-hidden">
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col md:flex-row items-center gap-20">
-                        <div className="w-full md:w-1/2">
+                        <div className="w-full md:w-1/2 text-center md:text-left">
                             <h2 className="text-4xl md:text-6xl mb-10 leading-tight">
-                                Where Celestial Wisdom <br /> Meets Laboratory <span className="italic">Precision</span>
+                                Where Celestial Wisdom <br /> Meets Botanical <span className="italic">Precision</span>
                             </h2>
-                            <p className="text-lg font-light opacity-80 leading-relaxed mb-12 max-w-lg">
+                            <p className="text-lg font-light opacity-80 leading-relaxed mb-12 max-w-lg mx-auto md:mx-0">
                                 Veluna was born from a simple realization: the moon's gravity influences the earth's oceans, and the same forces can be harnessed to optimize cellular skin health. Our "Moonshot" philosophy combines rare botanical extracts harvested under specific lunar phases with cutting-edge peptides.
                             </p>
                             <Link to="/about">
-                                <button className="btn-outline border-primary text-primary hover:bg-primary hover:text-secondary">
+                                <button className="btn-outline border-primary text-primary hover:bg-primary hover:text-secondary mx-auto md:mx-0">
                                     Our Story
                                 </button>
                             </Link>

@@ -8,9 +8,9 @@ const BestSellers = () => {
     return (
         <section className="py-32 bg-primary">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-                    <div>
-                        <h2 className="text-[10px] tracking-[0.4em] uppercase text-secondary/40 mb-6 font-luxury">
+                <div className="flex flex-col items-center mb-16 text-center">
+                    <div className="mb-6">
+                        <h2 className="text-[10px] tracking-[0.4em] uppercase text-secondary/40 mb-4 font-luxury">
                             Most Loved
                         </h2>
                         <h3 className="text-4xl md:text-5xl font-serif">

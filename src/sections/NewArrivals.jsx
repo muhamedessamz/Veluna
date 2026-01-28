@@ -22,10 +22,10 @@ const NewArrivals = () => {
                         Just Landed
                     </span>
                     <h2 className="text-4xl md:text-5xl font-serif mb-6">
-                        Fresh From the <span className="italic">Lab</span>
+                        Fresh From the <span className="italic">Harvest</span>
                     </h2>
                     <p className="max-w-xl text-secondary/60 font-light">
-                        Discover our latest innovations in botanical skincare science, crafted to reveal your most radiant self.
+                        Explore the latest curated breakthroughs in botanical skincare, selected to reveal your most radiant self.
                     </p>
                 </div>
 

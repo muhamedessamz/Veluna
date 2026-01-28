@@ -38,17 +38,17 @@ const ShopByCategory = () => {
                             className="group relative cursor-pointer overflow-hidden aspect-[3/4]"
                         >
                             <Link to="/shop" className="block w-full h-full">
-                                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors z-10" />
+                                <div className="absolute inset-x-0 bottom-0 top-1/2 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-80 group-hover:opacity-100 transition-opacity duration-700" />
                                 <img
                                     src={cat.image}
                                     alt={cat.name}
                                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
-                                    <h3 className="text-3xl font-serif mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <div className="absolute inset-0 z-20 flex flex-col items-center justify-end text-center p-10 pb-12">
+                                    <h3 className="text-3xl font-serif text-white mb-2 transform group-hover:-translate-y-2 transition-transform duration-500">
                                         {cat.name}
                                     </h3>
-                                    <p className="text-[10px] tracking-widest uppercase font-luxury opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">
+                                    <p className="text-[10px] tracking-[0.4em] uppercase font-luxury text-white/70 opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500 delay-100">
                                         {cat.desc}
                                     </p>
                                 </div>
