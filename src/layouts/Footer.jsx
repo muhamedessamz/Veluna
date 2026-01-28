@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Instagram, Facebook, Twitter, Mail } from 'lucide-react'
+import { Instagram, Facebook, Twitter, Mail, Linkedin } from 'lucide-react'
 
 const Footer = () => {
     return (
@@ -63,11 +63,29 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="border-t border-primary/10 pt-10 flex flex-col md:flex-row justify-between items-center text-[10px] tracking-[0.2em] uppercase opacity-40">
-                    <p>© 2026 VELUNA BEAUTY. ALL RIGHTS RESERVED.</p>
-                    <div className="flex space-x-6 mt-4 md:mt-0">
-                        <Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link>
-                        <Link to="/terms-of-service" className="hover:text-accent transition-colors">Terms of Service</Link>
+                <div className="border-t border-primary/10 pt-10 flex flex-col md:flex-row justify-between items-center text-[10px] tracking-[0.2em] uppercase">
+                    {/* Left: Copyright */}
+                    <div className="opacity-40 mb-4 md:mb-0">
+                        <p>© 2026 VELUNA BEAUTY. ALL RIGHTS RESERVED.</p>
+                    </div>
+
+                    {/* Center: Developer Credits */}
+                    <div className="flex items-center gap-4 mb-4 md:mb-0">
+                        <span className="opacity-60">Developed by Mohamed Essam</span>
+                        <div className="flex items-center gap-3 ml-1">
+                            <a href="https://www.linkedin.com/in/mohamedessamz/" target="_blank" rel="noopener noreferrer" className="opacity-40 hover:opacity-100 hover:text-accent transition-all duration-300">
+                                <Linkedin size={14} strokeWidth={1.5} />
+                            </a>
+                            <a href="mailto:mohamedessamzakariaa@gmail.com" className="opacity-40 hover:opacity-100 hover:text-accent transition-all duration-300">
+                                <Mail size={14} strokeWidth={1.5} />
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Right: Legal Links */}
+                    <div className="flex space-x-6 opacity-40">
+                        <Link to="/privacy-policy" className="hover:opacity-100 hover:text-accent transition-all duration-300">Privacy Policy</Link>
+                        <Link to="/terms-of-service" className="hover:opacity-100 hover:text-accent transition-all duration-300">Terms of Service</Link>
                     </div>
                 </div>
             </div>
